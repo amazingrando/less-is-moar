@@ -1,0 +1,45 @@
+
+//	This file contains the layout information
+//	and a little bit of styling
+
+body {
+	background:url('@{img-path}bkg.jpeg') top left;
+}
+
+.wrapper {
+	background:fadeout(@tertiary-color,30%);
+	margin:@unit * 2 auto; 
+	padding:@unit * 2;
+	width: @site-width;
+	.box-shadow(0 0 20px #71573c);
+}
+
+.container-wrapper {
+
+	.main-content {
+		float:left;
+		margin-right:10%;
+		width:65%;
+
+		@media (max-width: @mama-bear) { 
+			float:none;
+			margin:0 0 @unit;
+			width:100%;
+		}
+	}
+	.sidebar {
+		float:left;
+		width:25%;
+
+		@media (max-width: @mama-bear) { 
+			float:none;
+			margin:0 0 @unit;
+			width:100%;
+		}
+	}
+
+	// Applied to fix floated elements above
+	.clearfix; 
+
+
+}

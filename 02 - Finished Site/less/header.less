@@ -1,0 +1,29 @@
+.header {
+	background:@tertiary-color;
+	.rounded(15px);
+	margin-bottom:@unit * 2;
+	padding:@unit;
+	text-align:center;
+
+	h1 {
+		font-size:4em;
+		margin:0;
+	}
+
+	h2 {
+		margin-top:0;
+	}
+
+	a {
+		color:#fff;
+		display: inline-block;
+		padding:@unit/2;
+		text-decoration:none;
+		.gradient-vertical(@secondary-color, darken(@secondary-color,20%));
+		.rounded(10px);
+
+		&:hover {
+			.gradient-vertical(darken(@secondary-color,20%),@secondary-color);
+		}
+	}
+}
